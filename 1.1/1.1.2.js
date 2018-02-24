@@ -1,16 +1,13 @@
-var x = new Date();
-var y = x.getFullYear();
-var z = 40;
-
-
-
-while( z > 0){
-    if ( ( y%4 === 0 ) || ( y%400=== 0 ) && ( y%100 != 0 )){
-         console.log(y);
-         y++;
-         z--;
-    }else
-    y++;
+//Get a number from user and print table of the number
+var num = prompt();
+var num = Number(num);
+if ( isNaN(num)){
+  alert('enter a numeric number');
+}
+else{
+  for (var a = 1 ; a<= 10 ; a++){
+     console.log(num*a);
+  }
 }
 
 
